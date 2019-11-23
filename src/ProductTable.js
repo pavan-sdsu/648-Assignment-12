@@ -28,11 +28,13 @@ class ProductTable extends Component {
 		}
 		
 		return(
-			<table>
-				<thead>
+			<table className="table table-striped border">
+				<thead className="thead-dark">
 					<tr>
 						<th>Name</th>
 						<th>Price</th>
+						<th>Category</th>
+						<th></th>
 					</tr>
 				</thead>
 				<tbody>

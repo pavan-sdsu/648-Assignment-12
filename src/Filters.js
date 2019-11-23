@@ -18,9 +18,7 @@ class Filters extends Component {
 
 	render() {
 		return (
-			<form>
-				<input type="text" placeholder="Search" name="filterText" onChange={this.handleChange} autoComplete="off" />
-			</form>
+			<input type="text" placeholder="Search" name="filterText" className="w-100 form-control my-3" onChange={this.handleChange} autoComplete="off" />
 		)
 	}
 

@@ -33,18 +33,18 @@ class ProductForm extends Component {
 
 	render() {
 		return (
-			<form onSubmit={this.handleSave}>
-				<h4>Enter a new product</h4>
+			<form className="mt-3" onSubmit={this.handleSave}>
+				<h3>Add a new product</h3>
 				Name <br />
-				<input type="text" name="name" id="name" onChange={this.handleChange} value={this.state.product.name} required /> <br /> <br />
+				<input type="text" name="name" id="name" className="form-control col-lg-8" onChange={this.handleChange} value={this.state.product.name} required /> <br />
 
 				Category <br />
-				<input type="text" name="category" id="category" onChange={this.handleChange} value={this.state.product.category} required /> <br /> <br />
+				<input type="text" name="category" id="category" className="form-control col-lg-8" onChange={this.handleChange} value={this.state.product.category} required /> <br />
 
 				Price <br />
-				<input type="text" name="price" id="price" onChange={this.handleChange} value={this.state.product.price} required /> <br /> <br />
+				<input type="text" name="price" id="price" className="form-control col-lg-8" onChange={this.handleChange} value={this.state.product.price} required /> <br />
 
-				<input type="submit" value="Submit" />
+				<input type="submit" className="btn btn-primary" value="Save" />
 			</form>
 		)
 	}

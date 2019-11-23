@@ -19,7 +19,8 @@ class ProductRow extends Component {
 			<tr>
 				<td>{product.name}</td>
 				<td>{product.price}</td>
-				<td><button id={product.id} onClick={this.destroy}>Delete</button></td>
+				<td>{product.category}</td>
+				<td className="text-right"><button className="btn btn-primary" id={product.id} onClick={this.destroy}>Delete</button></td>
 			</tr>
 		)
 	}

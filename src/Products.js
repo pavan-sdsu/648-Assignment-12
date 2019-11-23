@@ -48,7 +48,7 @@ class Products extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="col-xl-4 col-lg-6">
 				<h2>My Inventory</h2>
 				<Filters onFilter={this.handleFilter} />
 				<ProductTable filterText={this.state.filterText} products={this.state.products} destroy={this.handleDestroy} />
